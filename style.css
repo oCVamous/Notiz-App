@@ -1,0 +1,251 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.content {
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+.content h2 {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.content-box {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    min-width: 500px;
+}
+
+#title {
+    height: 25px;
+    width: 400px;
+    border-color: transparent;
+    font-family: sans-serif;
+}
+
+#note {
+    height: 50px;
+    width: 400px;
+    margin-top: 10px;
+    border-color: transparent;
+    font-family: sans-serif;
+}
+
+#CreateTitle {
+    height: 25px;
+    width: 400px;
+    border-color: transparent;
+    font-family: sans-serif;
+}
+
+#CreateNote {
+    height: 50px;
+    width: 400px;
+    margin-top: 10px;
+    border-color: transparent;
+    font-family: sans-serif;
+}
+
+#note :hover {
+    border-color: transparent;
+}
+
+#title :hover {
+    border-color: transparent;
+}
+
+textarea:focus {
+    outline: none;
+    font-family: sans-serif;
+}
+
+.trash-img {
+    height: 40px;
+    width: 40px;
+}
+
+.content2 {
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    padding: 25px;
+    margin: 50px;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-height: 300px;
+    font-family: sans-serif;
+}
+
+.trash {
+    margin-left: 20px;
+}
+
+.trash-box {
+    margin-left: 25px;
+}
+
+.trash-box>div {
+    cursor: pointer;
+}
+
+.card {
+    max-width: 300px;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    background-color: lightgrey;
+    min-width: 200px;
+    margin: 25px;
+    word-break: break-all;
+    font-family: sans-serif;
+    border-radius: 10px;
+    background-color: #ff4;
+    height: max-content;
+}
+
+.myNotes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.deleteBtn {
+    display: flex;
+    justify-content: flex-end;
+    height: 50%;
+}
+
+.card-end {
+    display: flex;
+    justify-content: center;
+}
+
+.card-top {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 4px black;
+    background-color: #ff0;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.card-bottom {
+    padding: 10px;
+}
+
+.card-top h2 {
+    margin-top: -3px;
+}
+
+.addBtn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.allBlur {
+    /**
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(3px);
+    bottom: 0px;
+    */
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    /* right: 0px; */
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(3px);
+    /* bottom: 0px; */
+    width: 100%;
+    height: 100%;
+    overflow-y:auto
+}
+.d-none {
+    display: none;
+}
+
+.trashFolder {
+    /* position: relative; */
+    margin: 50px;
+    /* width: 75%; */
+    /* top: 25%; */
+    min-height: 300px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    font-family: sans-serif;
+}
+
+.deleteNotes {
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    padding: 25px;
+    margin: 50px;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-height: 300px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.span {
+    font-family: sans-serif;
+}
+
+.edit-btn {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.trash-btn {
+    height: 20px;
+}
+
+.add-img {
+    height: 30px;
+}
+
+.end {
+    text-align: center;
+}
+
+.popup-scale {
+    transform: scale(100%);
+}
+
+.popUp {
+    background-color: rgba(0, 0, 0, 0.692);
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 450ms ease-in-out;
+    transform: scale(0);
+}
+
+.EditNoteFolder {
+    display: none;
+}
+
+.editor{
+    height: 50vh;
+    width: 50vw;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.scale {
+    transform: scale(2.0);
+}
